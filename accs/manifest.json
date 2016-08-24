@@ -1,0 +1,7 @@
+{
+    "runtime": {
+        "majorVersion": "8"
+    },
+    "command": "java -jar drawingboard-micro-sse-1.0-SNAPSHOT-jar-with-dependencies.jar",
+    "notes": "Drawingboard Micro SSE with Java"
+}
