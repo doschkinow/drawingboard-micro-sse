@@ -1,10 +1,9 @@
 app=dbmicrosse
 onejar=drawingboard-micro-sse-1.0-SNAPSHOT-jar-with-dependencies.jar
 notes="$app for ACCS"
-credentials="cloud.admin:obscUre@1SeaL"
+credentials="cloud.admin:***"
 identityDomain=gse00000361
 #credentials="peter.doschkinow@oracle.com:***"
-#identityDomain=deoracle69725
 
 #endpoint=https://apaas.us.oraclecloud.com/paas/service/apaas/api/v1.1/apps
 endpoint=https://apaas.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps
