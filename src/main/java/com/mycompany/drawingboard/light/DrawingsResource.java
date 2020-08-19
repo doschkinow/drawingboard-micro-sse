@@ -87,7 +87,7 @@ public class DrawingsResource {
     public Location get() {
         Optional<String> loc = Optional.ofNullable(System.getenv("WS_LOCATION"));
         Location wssLocation = new Location();
-        wssLocation.name = loc.orElse("localhost:8888");
+        wssLocation.name = "http://" + loc.orElse("localhost:8888");
         return wssLocation;
     }
 
