@@ -6,7 +6,7 @@
     <table class="table table-striped">
         <tr ng-repeat="drawing in drawings">
             <td>{{drawing.id}}</td>
-            <td width="100%"><a href="http://{{location.name}}/#/drawings/{{drawing.id}}">{{drawing.name}}</a></td>
+            <td width="100%"><a href="{{location.name}}/#/drawings/{{drawing.id}}">{{drawing.name}}</a></td>
             <td><button class="btn-small" ng-click="remove(drawing.id)"><i class="icon-remove"></i></button></td>
         </tr>
     </table>

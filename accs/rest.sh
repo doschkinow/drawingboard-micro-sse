@@ -1,8 +1,8 @@
 app=dbmicrosse
 onejar=drawingboard-micro-sse-1.0-SNAPSHOT-jar-with-dependencies.jar
 notes="$app for ACCS"
-credentials="cloud.admin:***"
-identityDomain=gse00000361
+credentials="cloud.admin:mOuSY@2NotIOn"
+identityDomain=gse00011011
 #credentials="peter.doschkinow@oracle.com:***"
 
 #endpoint=https://apaas.us.oraclecloud.com/paas/service/apaas/api/v1.1/apps
@@ -32,6 +32,10 @@ create)
 
 update)
     tar -czvf $app.tar.gz manifest.json -C ../target $onejar
+    # put archive in storage container
+    curl -v -i -X PUT -u $credentials \
+        https://$identityDomain.storage.oraclecloud.com/v1/Storage-$identityDomain/$app/$app.tar.gz \
+        -T $app.tar.gz
     curl -X PUT -u $credentials \
         -H "X-ID-TENANT-NAME:$identityDomain" \
         -H "Content-Type: multipart/form-data" \
